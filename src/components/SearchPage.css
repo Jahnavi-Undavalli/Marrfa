@@ -1,0 +1,196 @@
+.search-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+  
+
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  
+  .search-box{
+    width: 96%;
+    margin-bottom: 15px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .search-button,
+  .add-button,
+  .filter-select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-box:focus,
+  .filter-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .add-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #1e8449;
+    transform: translateY(-2px);
+  }
+  
+  .search-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #21618c;
+    transform: translateY(-2px);
+  }
+  
+  .clear-filters {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .clear-filters:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  .filters {
+    margin-top: 20px;
+  }
+  
+  .filter-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  .category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .category-buttons button {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .results li {
+    background-color: #f7f9fc;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .results li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results li input[type="checkbox"] {
+    margin-right: 15px;
+    accent-color: #3498db;
+  }
+  
+  .results p {
+    color: #7f8c8d;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .search-section {
+      flex-direction: column;
+    }
+  
+    .search-box,
+    .filter-select,
+    .search-button,
+    .add-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .category-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .results li {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
